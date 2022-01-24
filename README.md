@@ -39,7 +39,7 @@ public class ExampleListenerScript : MonoBehaviour
 
     private void OnDisable()
     {
-        Events.IntegerEvent.AddListener(DoSomething);
+        Events.IntegerEvent.RemoveListener(DoSomething);
     }
 
     private void DoSomething(int i)
